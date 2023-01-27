@@ -1,0 +1,8 @@
+export const marketplaceData = [
+    {
+        name: "iPhone 12",
+        description: "",
+        price: "",
+        category: ""
+    }
+]
