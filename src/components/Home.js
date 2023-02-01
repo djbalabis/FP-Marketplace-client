@@ -1,6 +1,6 @@
 export const Home = () => {
   return (
-    <div id="main">
+    <div id="home">
       <main>
          {/* logo image */}
         <img src="" alt="" />
