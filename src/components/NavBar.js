@@ -11,11 +11,11 @@ export const NavBar = () => {
 
         <nav>
             <ul>
-                <li> Home </li>
-                <li> Login </li>
-                <li> Categories </li>
-                <li> Inventory </li>
-                <li> Log Out </li>
+                <li> <a href="/">Home</a> </li>
+                <li> <a href="/Login">Login</a></li>
+                <li> <a href="/Categories">Categories</a> </li>
+                <li> <a href="/Inventory">Inventory</a> </li>
+                <li> <a href="/Logout">Log Out</a> </li>
             </ul>
         </nav>
       </div>
