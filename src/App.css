@@ -11,6 +11,7 @@
   height: 100vh;
   background-image: url(./assets/MP-background3.jpeg);
   background-size: cover;
+  background-attachment: fixed;
   /* background-position: center; */
 }
 
@@ -102,6 +103,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   height: 100px;
   background-image: linear-gradient(
     to right,
@@ -148,6 +150,7 @@
 }
 
 .nav-links {
+  display: flex;
   padding: 10px;
   margin-top: 10px;
 }
@@ -295,5 +298,145 @@ label {
   .category-card {
     width: 200px;
     height: 200px;
+  }
+}
+
+
+
+
+.toggleButton {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.toggleButton svg {
+  font-size: 35px;
+}
+.toggleButton button {
+  /* margin-right: 20px; */
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#open {
+  height: 100vh;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#open .nav-links {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  padding-left: 40px;
+}
+
+#open a {
+  width: 100%;
+  text-align: start;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+#open .toggleButton button {
+  margin-right: 6px;
+}
+
+#open .search-container {
+  display: flex;
+  padding-left: 40px;
+}
+
+#open .search-field {
+  width: auto;
+}
+
+/* @media only screen and (max-width: 900px) {
+  .navbar a {
+    width: 70px;
+  }
+} */
+
+@media only screen and (max-width: 600px) {
+  .toggleButton {
+    display: flex;
+  }
+  #close a {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .toggleButton {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+
+  #open {
+    height: 100px;
+  }
+
+  #open .nav-links {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  .logo {
+    display: none;
+  }
+  .navbar {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .search-container {
+    /* display: none; */
+    width: 100px;
+  }
+  .navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .links {
+    font-size: large;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .search-container {
+    /* display: none; */
+    width: 50px;
+    margin-right: 60px;
+  }
+  .navbar {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .links {
+    font-size: medium;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .search-container {
+    display: none;
   }
 }

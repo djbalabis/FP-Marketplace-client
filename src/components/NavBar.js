@@ -1,22 +1,41 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import MP3dark from "../assets/MP3-dark.png";
 import Search from "../assets/search-glass.png";
+import { FaHamburger } from "react-icons/fa";
 
 export const NavBar = () => {
+
+  const [expandNavbar, setExpandNavbar] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setExpandNavbar(false);
+  }, [location]);
+
   return (
-    <div className="navbar">
+    <div className="navbar" id={expandNavbar ? "open" : "close"}>
       <div>
         <Link to="/"><img src={MP3dark} alt="Logo" className="logo" /></Link>
       </div>
-      <div class="search-container">
-      <form action="/" method="GET" className="form">
-        <input type="search" placeholder="Search" className="search-field" />
-        <button type="submit" className="search-button">
-          <img src={Search} alt="searching-glass" />
+      <div className="toggleButton">
+        <button
+          onClick={() => {
+            setExpandNavbar((prev) => !prev);
+          }}
+        >
+          <FaHamburger />
         </button>
-      </form>
-    </div>
+      </div>
+      <div className="search-container">
+        <form action="/" method="GET" className="form">
+          <input type="search" placeholder="Search" className="search-field" />
+          <button type="submit" className="search-button">
+            <img src={Search} alt="searching-glass" />
+          </button>
+        </form>
+      </div>
       <div className="nav-links">
         <Link className="links" to="/">
           Home
@@ -30,13 +49,7 @@ export const NavBar = () => {
         <Link className="links" to="/login">
           Sign in
         </Link>
-        {/* <Link className="links" to="/signup">
-          Sign up
-        </Link> */}
       </div>
-      {/* <div className="toggleButton">
-        <button></button>
-      </div> */}
     </div>
   );
 };
