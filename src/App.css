@@ -86,26 +86,30 @@
 .logo {
   align-items: flex-start;
   width: 200px;
-  height: 200px;
+  height: 120px;
   margin-top: 8px;
 }
 
 .logo:hover {
   transition: .3s;
-  width: 204px;
-  height: 204px;
+  width: 202px;
+  height: 122px;
 }
 
 .home-logo {
   margin-left: 700px;
-  width: 600px;
-  height: 600px;
+  margin-top: 50px;
+  width: 650px;
+  height: 400px;
 }
 
 .home-text {
   display: none;
   margin-left: 700px;
   font-size: 30px;
+  letter-spacing: 3px;
+  color: rgb(255, 78, 128);
+  text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 .home-logo:hover + .home-text {
