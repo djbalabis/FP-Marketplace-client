@@ -143,6 +143,7 @@
   color: rgb(255, 78, 128);
   text-shadow: 1px 1px rgb(0, 0, 0);
   font-style: oblique;
+  margin-top: -40px;
 }
 
 .home-logo:hover + .home-text {
