@@ -8,6 +8,7 @@ export const Login = () => {
         <div className="login-card">
           <label>Username: </label>
           <input
+            className="input"
             id="username"
             placeholder="Enter Username/E-Mail"
             name="Username"
@@ -16,13 +17,14 @@ export const Login = () => {
 
           <label>Password: </label>
           <input
+            className="input"
             id="password"
             placeholder="Enter Password"
             name="Password"
             required
           ></input>
 
-          <button id="submitBtn" type="submit">
+          <button className="btn" id="submitBtn" type="submit">
             Login
           </button>
         </div>

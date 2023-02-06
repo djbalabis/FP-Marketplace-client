@@ -44,7 +44,7 @@
   height: 200px;
   width: 200px;
   box-shadow: 5px 5px 20px grey;
-  border-radius: 8px;
+  border-radius: 15px;
   padding: 25px;
   margin-top: 100px;
   background-color: white;
@@ -63,7 +63,7 @@
 
 .icon:hover {
   color: rgb(255, 78, 128); 
-  transition: .4s;
+  transition: .3s;
   font-size: 65px;
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
@@ -110,6 +110,7 @@
   letter-spacing: 3px;
   color: rgb(255, 78, 128);
   text-shadow: 1px 1px rgb(0, 0, 0);
+  font-style: oblique;
 }
 
 .home-logo:hover + .home-text {
@@ -153,7 +154,7 @@
   height: 200px;
   width: 300px;
   box-shadow: 5px 5px 20px grey;
-  border-radius: 8px;
+  border-radius: 15px;
   padding: 25px;
   margin-top: 100px;
   background-color: white;
@@ -162,6 +163,34 @@
     rgba(87, 87, 255, 0.624),
     rgba(78, 226, 255, 0.623)
   );
+}
+
+.input {
+  height: 30px;
+  width: 225px;
+  border-radius: 6px;
+}
+
+.btn {
+  height: 30px;
+  width: 80px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  /* background-color: rgba(87, 87, 255, 0.624); */
+  color: aliceblue;
+  background-image: linear-gradient(
+    to right,
+    rgba(87, 87, 255, 0.969),
+    rgba(78, 226, 255, 0.951)
+  );
+}
+
+label {
+  font-weight: 600;
+  letter-spacing: 3px;
 }
 
 #login h1 {
@@ -184,7 +213,7 @@
   height: 200px;
   width: 300px;
   box-shadow: 5px 5px 20px grey;
-  border-radius: 8px;
+  border-radius: 15px;
   padding: 25px;
   margin-top: 100px;
   background-color: white;
