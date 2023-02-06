@@ -1,4 +1,3 @@
-import MP3dark from "../assets/MP3-dark.png";
 import MP3light from "../assets/MP3-light.png";
 
 // import { BiMoney } from "react-icons/bi";
