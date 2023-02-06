@@ -16,7 +16,7 @@ export const Categories = () => {
     <div id="category">
       <main>
         <div id="categoryCard">
-          <h1 className="title">Categories</h1>
+          {/* <h1 className="title">Categories</h1> */}
           <div className="cat-cards">
             <div className="category-card">
               <h3>Free</h3>

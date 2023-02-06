@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const SignUp = () => {
   return (
     <div id="signUp">
       <main>
-        <h1 className="title">Signup</h1>
+        {/* <h1 className="title">Signup</h1> */}
         <div className="signUp-card">
-          <label>Username: </label>
+          <h2>Create account</h2>
+          <label>Username</label>
           <input
             className="input"
             id="username"
@@ -15,7 +17,7 @@ export const SignUp = () => {
             required
           ></input>
 
-          <label>Password: </label>
+          <label>Password</label>
           <input
             className="input"
             id="password"
@@ -25,8 +27,9 @@ export const SignUp = () => {
           ></input>
 
           <button className="btn" id="submitBtn" type="submit">
-            Sign Up
+            Create your Maketplace account
           </button>
+          <p className="already">Have an account? <Link to="/login" className="sign-link">Sign in</Link></p>
         </div>
       </main>
     </div>

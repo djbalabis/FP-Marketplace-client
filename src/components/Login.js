@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   return (
     <div id="login">
       <main>
-        <h1 className="title">Login</h1>
+        {/* <h1 className="title">Login</h1> */}
         <div className="login-card">
-          <label>Username: </label>
+        <h2>Sign in</h2>
+          <label>Username</label>
           <input
             className="input"
             id="username"
@@ -15,7 +17,7 @@ export const Login = () => {
             required
           ></input>
 
-          <label>Password: </label>
+          <label>Password</label>
           <input
             className="input"
             id="password"
@@ -25,8 +27,9 @@ export const Login = () => {
           ></input>
 
           <button className="btn" id="submitBtn" type="submit">
-            Login
+            Sign in
           </button>
+          <p className="already">New to Marketplace? <Link to="/signup" className="sign-link">Sign up</Link></p>
         </div>
       </main>
     </div>

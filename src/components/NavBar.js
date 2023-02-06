@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import MP3dark from "../assets/MP3-dark.png";
+import Search from "../assets/search-glass.png";
 
 export const NavBar = () => {
   return (
@@ -8,6 +9,14 @@ export const NavBar = () => {
       <div>
         <Link to="/"><img src={MP3dark} alt="Logo" className="logo" /></Link>
       </div>
+      <div class="search-container">
+      <form action="/" method="GET" className="form">
+        <input type="search" placeholder="Search" className="search-field" />
+        <button type="submit" className="search-button">
+          <img src={Search} alt="searching-glass" />
+        </button>
+      </form>
+    </div>
       <div className="nav-links">
         <Link className="links" to="/">
           Home
@@ -19,11 +28,11 @@ export const NavBar = () => {
           Inventory
         </Link>
         <Link className="links" to="/login">
-          Login
+          Sign in
         </Link>
-        <Link className="links" to="/signup">
-          Signup
-        </Link>
+        {/* <Link className="links" to="/signup">
+          Sign up
+        </Link> */}
       </div>
       {/* <div className="toggleButton">
         <button></button>
