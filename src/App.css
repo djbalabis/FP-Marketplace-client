@@ -86,6 +86,22 @@
   letter-spacing: 2px;
 }
 
+.inventory-card {
+  height: 225px;
+  width: 225px;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 100px;
+  background-color: white;
+  background-image: linear-gradient(
+    to right,
+    rgba(228, 228, 228, 0.822),
+    rgba(255, 255, 255, 0.822)
+  );
+  letter-spacing: 2px;
+}
+
 .icon {
   color: rgb(87, 87, 255);
   font-size: 60px;
@@ -93,9 +109,22 @@
 }
 
 .icon:hover {
-  color: rgb(255, 78, 128); 
-  transition: .3s;
+  color: rgb(255, 78, 128);
+  transition: 0.3s;
   font-size: 65px;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+#mini-icon {
+  color: rgb(87, 87, 255);
+  font-size: 30px;
+  /* margin-top: 25px; */
+}
+
+#mini-icon:hover {
+  color: rgb(255, 78, 128);
+  transition: 0.3s;
+  font-size: 32px;
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
@@ -167,8 +196,8 @@
 
 .links:hover {
   color: rgb(241, 241, 241);
-  text-shadow: 2px 2px rgb(0, 0, 0);  
-  transition: .3s;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  transition: 0.3s;
   /* font-size: 21px; */
 }
 
@@ -206,6 +235,28 @@
   border: none;
   border-radius: 100px;
   outline: none;
+}
+
+#buy-btn {
+  height: 30px;
+  width: 100px;
+  border-radius: 100px;
+  margin-top: 20px;
+  color: aliceblue;
+  background-image: linear-gradient(
+    to right,
+    rgba(87, 87, 255, 0.969),
+    rgba(78, 226, 255, 0.951)
+  );
+}
+
+#buy-btn:hover {
+  color: black;
+  background-image: linear-gradient(
+    to right,
+    rgba(87, 252, 255, 0.969),
+    rgba(78, 255, 93, 0.951)
+  );
 }
 
 .btn {
@@ -274,7 +325,7 @@ label {
 .sign-link {
   text-decoration: none;
   color: aliceblue;
-} 
+}
 
 .sign-link:hover {
   color: rgb(255, 78, 128);
@@ -301,9 +352,6 @@ label {
     height: 200px;
   }
 }
-
-
-
 
 .toggleButton {
   width: 100%;
